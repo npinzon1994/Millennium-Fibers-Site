@@ -1,27 +1,15 @@
-function popup(){
-    // Get the modal
-    var modal = document.getElementById("myModal");
+function exitDislog() {
+    var modal = document.getElementById('myModal');
+    modal.display = "none";
+}
 
-// Get the button that opens the modal
-    var link = document.getElementsByClassName("circle-link");
+function showDialog(){
+    var modal = document.getElementById('myModal');
+    modal.display = "block";
 
-// Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var winWidth = window.innerWidth;
+    var winHeight = window.innerHeight;
 
-// When the user clicks on the button, open the modal
-    link.href = function() {
-        modal.style.display = "block";
-    }
-
-// When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    modal.style.left = (winWidth/2) - 480/2 + "px";
+    modal.style.top = "150px";
 }

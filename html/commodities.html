@@ -11,6 +11,7 @@
           href="../css/styles.css">
 
     <script type="text/javascript" src="../scripts/popup_modal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -41,52 +42,52 @@
 
         <div class="column-div">
             <div class="column">
-                <a class="circle-link" href="javascript:popup()"><img class="circle" src="../images/mixed-paper.jpg"></a>
+                <a class="circle-link" href="#openModal"><img class="circle" src="../images/mixed-paper.jpg"></a>
                 <p>#3 Mixed Paper</p>
             </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/deinking-news.jpg"></a>
+            <a class="circle-link" href="#openModal2" ><img class="circle" src="../images/deinking-news.jpg"></a>
             <p>#8 Deinking News</p>
             </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/over-issued-news.jpg"></a>
+            <a class="circle-link" href="#openModal3"><img class="circle" src="../images/over-issued-news.jpg"></a>
             <p>#9 Over-issued News</p>
             </div>
         </div>
 
         <div class="column-div">
             <div class="column">
-                <a class="circle-link"><img class="circle" src="../images/occ.jpg"></a>
+                <a class="circle-link" href="#openModal4"><img class="circle" src="../images/occ.jpg"></a>
                 <p>#11 Corrugated Containers (OCC)</p>
             </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/double-sorted-occ.jpg"></a>
+            <a class="circle-link" href="#openModal5"><img class="circle" src="../images/double-sorted-occ.jpg"></a>
             <p>#12 Double-Sorted Corrugated (DSOCC)</p>
         </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/dl-kraft.jpg"></a>
+            <a class="circle-link" href="#openModal6"><img class="circle" src="../images/dl-kraft.jpg"></a>
             <p>#13 Double Liner Kraft (DLK)</p>
         </div>
         </div>
 
         <div class="column-div">
             <div class="column">
-                <a class="circle-link"><img class="circle" src="../images/kraft-cb.jpg"></a>
+                <a class="circle-link" href="#openModal7"><img class="circle"  src="../images/kraft-cb.jpg"></a>
                 <p>#17 Kraft Carrier Board (KCB)</p>
             </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/hws.jpg"></a>
+            <a class="circle-link" href="#openModal8"><img class="circle" src="../images/hws.jpg"></a>
             <p>#30 Hard White Shaving (HWS)</p>
         </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/sop.jpg"></a>
+            <a class="circle-link" href="#openModal9"><img class="circle" src="../images/sop.jpg"></a>
             <p>#37 Sorted Office Paper (SOP)</p>
         </div>
         </div>
 
         <div class="column-div">
             <div class="column">
-                <a class="circle-link"><img class="circle" src="../images/swl.jpg"></a>
+                <a class="circle-link" href="#openModal10"><img class="circle" src="../images/swl.jpg"></a>
                 <p>#40 Sorted White Ledger (SWL)</p>
             </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/mwl.jpg"></a>
+            <a class="circle-link" href="#openModal11"><img class="circle" src="../images/mwl.jpg"></a>
             <p>#41 Manifold White Ledger (MWL)</p>
         </div><div class="column">
-            <a class="circle-link"><img class="circle" src="../images/cbs.jpg"></a>
+            <a class="circle-link" href="#openModal12"><img class="circle" src="../images/cbs.jpg"></a>
             <p>#43 Coated Book Stock (CBS)</p>
         </div>
         </div>
@@ -95,9 +96,152 @@
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#3 Mixed Paper</h2>
+                    <p>Consists of a baled clean, sorted mixture of various qualities of
+                    paper not limited to type of baling or fiber content. </p>
+                    <p><em>Prohibited materials may not exceed 2%</em></p>
+                    <p><em>Total out throws may not exceed 10%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal2" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#8 Deinking News</h2>
+                    <p>Consists of sorted, fresh newspapers. This material is not sunburned, free from magazines,
+                    white bank, pressroom over-issues and paper other than news, containing no more than the
+                    normal percentage of rotogravure and colored sections. This grade must be tare free.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws may not exceed 1%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal3" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#9 Over-issued News</h2>
+                    <p>Consists of unused, overrun newspapers printed on news print, containing no more than
+                    the normal percentage of rotogravure and colored section.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws are not permitted</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal4" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#11 Corrugated Containers (OCC)</h2>
+                    <p>Consists of baled, corrugated containers having liners of either test liner,
+                    jute or kraft.</p>
+                    <p><em>Prohibited materials may not exceed 1%</em></p>
+                    <p><em>Total out throws may not exceed 5%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal5" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#12 Double-Sorted Corrugated (DSOCC)</h2>
+                    <p>Consists of baled, double-sided corrugated containers generated from supermarkets and/or
+                    industrial or commercial facilities having liner or test liner, jute, or kraft.</p>
+                    <p>Material has been specially sorted to be free of boxboard, off-shore corrugated, plastic, and wax.</p>
+                    <p><em>Prohibited materials may not exceed 1%</em></p>
+                    <p><em>Total out throws may not exceed 2%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal6" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#13 Double Liner Kraft (DLK)</h2>
+                    <p>Consists of baled new corrugated cutting which has liners of either test liner, jute, or kraft.</p>
+                    <p>Treated mediums or liners, insoluble adhesives, butt rolls, and slabbed of hog medium
+                    are not acceptable in this grade.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws may not exceed 2%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal7" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#17 Kraft Carrier Board (KCB)</h2>
+                    <p>Consists of baled printed or unprinted, unbleached new beverage carrier sheets and cuttings.
+                    May contain wet strength additives.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws may not exceed 1%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal8" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#30 Hard White Shaving (HWS)</h2>
+                    <p>Consists of baled shavings or sheets of unprinted, untreated, white, groundwood-free paper.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws may not exceed 1%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal9" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#37 Sorted Office Paper (SOP)</h2>
+                    <p>Consists of baled paper, as typically generated by offices, primarily containing white
+                    and colored groundwood-free paper which is free of unbleached fiber.</p>
+                    <p>May include a small percentage of groundwood, computer printouts, and facsimile paper.</p>
+                    <p><em>Prohibited materials may not exceed 2%</em></p>
+                    <p><em>Total out throws may not exceed 5%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal10" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#40 Sorted White Ledger (SWL)</h2>
+                    <p>Consists of baled, uncoated, printed or unprinted sheets, shavings, guillotined books,
+                        and cuttings of white, groundwood-free ledger, bond, writing, and other papers which have similar
+                        fiber and filler content.</p>
+                    <p><em>Prohibited materials may not exceed 1%</em></p>
+                    <p><em>Total out throws may not exceed 2%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal11" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#41 Manifold White Ledger (MWL)</h2>
+                    <p>Consists of baled sheets, shavings, and cutting of industrially-generated white groundwood-free paper - printed or unprinted.
+                    All stock must be uncoated and free of non-impact printing.</p>
+                    <p><em>Prohibited materials may not exceed 1%</em></p>
+                    <p><em>Total out throws may not exceed 2%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
+            </div>
+
+            <div id="openModal12" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>#43 Coated Book Stock (CBS)</h2>
+                    <p>Consists of coated, groundwood-free paper in sheets, shavings, guillotined books and cuttings -
+                    printed or unprinted. A reasonable percentage of paper containing fine groundwood may be included.</p>
+                    <p><em>Prohibited materials are not permitted</em></p>
+                    <p><em>Total out throws may not exceed 2%</em></p>
+                    <a href="#cancel" title="Cancel" class="cancel">Close</a>
+                </div>
             </div>
 
         </div>
