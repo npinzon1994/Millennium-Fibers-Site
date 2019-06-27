@@ -4,6 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Millennium Fibers - Contact Us</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            alert("grecaptcha is ready!");
+        };
+    </script>
 
     <link rel="icon" href="images/cxlogo.png">
     <!-- <link rel="stylesheet" media="screen and (min-width: 100px) and (max-width: 380px)" type="text/css" href="styles/mobileStyleSheet.css"> -->
@@ -50,7 +56,7 @@
                 </div>
                 <a class="directions-btn" target="_blank" href="https://www.google.com/maps/place/60+S+Franklin+Ave,+Valley+Stream,+NY+11580/@40.6635555,-73.7044431,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26462f2a51563:0xf00cf1c3bdb39b58!8m2!3d40.6635555!4d-73.7022491">Get Directions</a>
             </div>
-            <form action="scripts/contactForm_handler.php" id="contactForm" method="post">
+            <form action="../scripts/contactForm_handler.php" id="contactForm" method="post">
                 <!-- within your existing form add this field -->
                 <p style="color: red; padding-left: 43px; margin-right: 490px; font-family: 'Questrial', sans-serif;" >* = required field</p>
                 <span style="color: red; padding-left: 43px;">*</span><input type="text" style="margin-left: 4px;" name="name" placeholder="Name" required>
@@ -58,7 +64,8 @@
                 <span style="color: red; padding-left: 43px;">*</span> <input style="margin-left: 0;" type="text" name="email" placeholder="Email" required>
                 <input type="text" name="phone" placeholder="Phone (no special characters)"> <br>
 
-                <textarea name="comments" placeholder="Type your message here" required style="margin-left: 53px;"></textarea> <br>
+                <textarea name="message" placeholder="Type your message here" style="margin-left: 53px;"></textarea> <br>
+                <div class="g-recaptcha" data-sitekey="6LeYDqsUAAAAAHAF92vlWWUil6fDjvC7BjEXufz8"></div>
 
                 <div style="margin-right: 275px;">
                     <button type="submit" style="margin: 10px 10px 20px 54px;">Submit</button>
@@ -76,7 +83,7 @@
             margin: auto;">Email</a>
         </div><div class="column">
             <h3>Darrell Cheng</h3>
-            <a class="circle-link"><img class="circle" src="../images/darrell-photo.JPG"></a>
+            <a class="circle-link"><img class="circle" src="../images/darrell-photo.jpg"></a>
             <p>Manager/Sales</p>
             <a href="mailto:darrell@millenniumfibers.com" target="_blank" class="email-btn" style="width: 200px;
             margin: auto;">Email</a>
