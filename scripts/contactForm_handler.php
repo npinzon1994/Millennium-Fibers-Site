@@ -28,10 +28,13 @@ if ($captcha_success->success==false) {
         $phone = $_REQUEST['phone'];
         $message = $_REQUEST['message'];
         $response = $_POST["g-recaptcha-response"];
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/plain;charset=UTF-8" . "\r\n";
+        $headers .= "From: " . $email;
         $final_message = "Dear Millennium Fibers Manager, " . "\r\n\r\n" . $message  . "\r\n\r\nSincerely, " . "\r\n" . $name . "\r\n\r\n" . $phone;
 
         //send email
-        mail($admin_email, "$subject", $final_message, "From:" . $email);
+        mail($admin_email, "$subject", $final_message, $headers);
 
         //Email response
         $message_success = "Email sent. Thank you for contacting us!";
