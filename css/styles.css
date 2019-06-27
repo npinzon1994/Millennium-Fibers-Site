@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans:100,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|IBM+Plex+Sans:100,700|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
 html, body {
     height: 100%;
@@ -300,6 +301,12 @@ a:focus {
     vertical-align: top;
 }
 
+.column-div h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 46px;
+    color: #339933;
+}
+
 .column{
     display: inline-block;
     margin: 0 3.1% 1em;
@@ -310,15 +317,48 @@ a:focus {
 }
 
 .column p{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Questrial', sans-serif;
     color: #3A3A3A;
-    font-size: 24px;
+    font-size: 22px;
+}
+
+.column h3{
+    font-family: 'Questrial', sans-serif;
+    color: #3A3A3A;
+    font-size: 28px;
+}
+
+.column h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #339933;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.phone-fax-container{
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+
+.phone-fax-container a{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+}
+
+.icon{
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 12px;
 }
 
 a .circle{
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    min-width: 301px;
+    min-height: 268px;
     filter: brightness(75%);
     /*position: absolute;*/
     /*top: 0;*/
@@ -421,6 +461,41 @@ a .circle:visited{
     transition: 0.4s ease;
 }
 
+.phone-num{
+    color: #fff;
+
+}
+
+.phone-num:visited {
+    color: #fff;
+}
+
+.phone-num:hover{
+    transition: 0.4s ease;
+    color: #00cc00;
+}
+
+.directions-btn{
+    display: block;
+    border: 1px #fff solid;
+    font-family: 'Quicksand', sans-serif;
+    /*margin-top: 75px;*/
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.directions-btn:visited{
+    color: #fff;
+}
+
+.directions-btn:hover{
+    border-color: #00cc00;
+    color: #00cc00;
+    transition: 0.4s ease;
+}
+
 .contact-us-btn{
     border: 1px #3a3a3a solid;
     font-family: 'Quicksand', sans-serif;
@@ -441,6 +516,100 @@ a .circle:visited{
     background: #3a3a3a;
     -webkit-text-fill-color: #00cc00;
     transition: 0.4s ease;
+}
+
+.email-btn{
+    display: block;
+    border: 1px #3a3a3a solid;
+    font-family: 'Quicksand', sans-serif;
+    /*margin-top: 75px;*/
+    padding: 10px 0;
+    color: #3a3a3a;
+    font-size: 16px;
+    border-radius: 22px;
+
+}
+
+.email-btn:visited{
+    color: #3a3a3a;
+}
+
+.email-btn:hover{
+    background: #3a3a3a;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.contact-main{
+
+}
+
+.contact-main h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+#contactForm{
+    background-color: #3a3a3a;
+    display: inline-block;
+}
+
+#contactForm p {
+    padding: 20px 0 0 20px;
+    font-size: 18px;
+}
+
+#contactForm input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0 8px 30px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+#contactForm select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0 8px 30px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+#contactForm button{
+    width: 163px;
+    height: 40px;
+    font-family: 'Lato', sans-serif;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 16px;
+    border: 1px #fff solid;
+}
+
+#contactForm button:hover{
+    border-color: #00cc00;
+    color: #00cc00;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    height: 150px;
+}
+
+span {
+    font-family: 'Lato', sans-serif;
+}
+
+#contactForm textarea {
+    width: 634px;
+    padding: 12px 20px;
+    margin: 8px 0 8px 30px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 /* For Javascript */

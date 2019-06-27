@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Millennium Fibers - Comtact Us</title>
+    <title>Millennium Fibers - Contact Us</title>
 
     <link rel="icon" href="images/cxlogo.png">
     <!-- <link rel="stylesheet" media="screen and (min-width: 100px) and (max-width: 380px)" type="text/css" href="styles/mobileStyleSheet.css"> -->
@@ -34,83 +34,53 @@
 
 <div id="page-container">
     <div id="main">
-
-        <div class="bottles-img-container" style="height: 600px; margin-bottom: 0;">
-            <div class="tint"></div>
-            <div class="pos-left">
-                <h1>About Us</h1>
-                <h1></h1>
+        <h1 style="font-family: 'Quicksand', sans-serif; font-size: 38px; margin-top: 140px;">Contact Us</h1>
+        <div class="column-div" style="background: #3a3a3a; position:relative; margin-top: 40px;">
+            <div class="column" style="min-width: 290px; background: #3a3a3a; margin: auto 80px auto auto;">
+                <h2>New York Office</h2>
+                <hr style="width: 80%; color: #e8e8e8; margin-bottom: 30px;">
+                <p style="line-height: 40px; margin-bottom: 25px; color: #fff;">60 S. Franklin Ave. Valley Stream, NY 11580</p>
+                <div class="phone-fax-container">
+                    <img class="icon" src="../images/phone-icon.png" alt="phone icon">
+                    <a href="tel:5168872940" class="phone-num">(516) 887-2940</a>
+                </div>
+                <div class="phone-fax-container" style="margin-bottom: 50px;">
+                    <img class="icon" src="../images/fax-icon.png" alt="fax icon" style="height: 40px; width: 40px;">
+                    <a href="tel:9737104654" class="phone-num">(973) 710-4654</a>
+                </div>
+                <a class="directions-btn" target="_blank" href="https://www.google.com/maps/place/60+S+Franklin+Ave,+Valley+Stream,+NY+11580/@40.6635555,-73.7044431,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26462f2a51563:0xf00cf1c3bdb39b58!8m2!3d40.6635555!4d-73.7022491">Get Directions</a>
             </div>
-        </div>
+            <form action="scripts/contactForm_handler.php" id="contactForm" method="post">
+                <!-- within your existing form add this field -->
+                <p style="color: red; padding-left: 43px; margin-right: 490px; font-family: 'Questrial', sans-serif;" >* = required field</p>
+                <span style="color: red; padding-left: 43px;">*</span><input type="text" style="margin-left: 4px;" name="name" placeholder="Name" required>
+                <input type="text" name="company" placeholder="Company"> <br>
+                <span style="color: red; padding-left: 43px;">*</span> <input style="margin-left: 0;" type="text" name="email" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone (no special characters)"> <br>
 
-        <div class="below-main">
-            <h1>Our Mission Statement</h1>
-            <p>We embrace our commitment to establish a mutual beneficial relationship with
-                our supplier on a long term basis.</p>
-        </div>
-        <div class="third-div">
-            <div class="left-div">
-                <h2 style="margin-top: 0;">Millennium Fibers, Inc.</h2>
-                <p>Millennium Fibers is a diversified recycling firm that produces and transacts
-                    fiber materials among domestic and international markets. </p>
-                <p style="margin-bottom: 60px;"> Representatives of our company understand the dynamics of this industry
-                    and our analysis on commodity trends secure competitive prices for both up
-                    and downswing markets.</p>
-                <a class="contact-us-btn" href="#">Contact Us</a>
-            </div><div class="right-div">
-            <img src="../images/neat-occ.jpeg" alt="Cardboard photo">
-        </div>
-        </div>
+                <textarea name="comments" placeholder="Type your message here" required style="margin-left: 53px;"></textarea> <br>
 
-        <div class="fourth-div">
-            <div class="right-div">
-                <img src="../images/open-blur.jpeg" alt="Container Yard Open Sky Photo">
-            </div><div class="left-div">
-            <h2 style="margin-left: 40px;">All Dimensions of Paper Commodities</h2>
-            <p style="margin-left: 40px;">Millennium Fibers has aggressively extended its corporate structure
-                since our initial incorporation. Our partnership with more than 300
-                suppliers over the United States enables us to include production segments
-                of secondary fibers during this vertical integration. Therefore,
-                our services extend to cover all dimensions of paper commodities:</p>
+                <div style="margin-right: 275px;">
+                    <button type="submit" style="margin: 10px 10px 20px 54px;">Submit</button>
+                    <button type="reset" style="margin: 10px 10px 20px 10px;">Reset</button>
+                </div>
+            </form>
         </div>
+        <div class="column-div" style="margin-bottom: 100px;">
+            <h1>Meet the Team!</h1>
+            <div class="column">
+            <h3>Jimmy Cheng</h3>
+            <a class="circle-link"><img class="circle" src="../images/jimmy-photo.JPG"></a>
+            <p>President</p>
+            <a href="mailto:jimmy@millenniumfibers.com" target="_blank" class="email-btn" style="width: 200px;
+            margin: auto;">Email</a>
+        </div><div class="column">
+            <h3>Darrell Cheng</h3>
+            <a class="circle-link"><img class="circle" src="../images/darrell-photo.JPG"></a>
+            <p>Manager/Sales</p>
+            <a href="mailto:darrell@millenniumfibers.com" target="_blank" class="email-btn" style="width: 200px;
+            margin: auto;">Email</a>
         </div>
-
-        <div class="bar-div">
-            <ul>
-                <li>Old Corrugated Containers (OCC)</li>
-                <li>Old News Papers (ONP)</li>
-                <li>White Ledger</li>
-                <li>Office Paper</li>
-                <li>Hard White</li>
-            </ul>
-            <p style="padding-bottom: 40px;">And many more!</p>
-        </div>
-        <div class="fifth-div">
-            <div class="left-div">
-                <h2 style="margin-top: 0;">Solid Domestic & International Networks</h2>
-                <p>We are proud to be a leading supplier to China, currently the most active and
-                    opportunistic market in recycling. We've established solid international relationships
-                    with Asia, India, South America, and Europe, which allowed our potential to grow in
-                    paper tonnage and customer/supplier base.</p>
-                <p>In addition to our success overseas, Millennium Fibers is confident in its domestic
-                    services offered throughout the United States and Canada. Numerous mills support
-                    us in addition to our regular business with America: the behemoth of the recycling industry.
-                    These connections demonstrate our capability as an entrepreneur and therefore will guarantee
-                    your complete satisfaction with our service.</p>
-            </div><div class="right-div">
-            <img src="../images/mf-flowchart-black.png" alt="Company Flowchart">
-        </div>
-        </div>
-        <div class="sixth-div">
-            <div class="right-div">
-                <img src="../images/sky-containers.jpeg" alt="Containers Open Sky Photo" style="margin-top: 10px;">
-            </div><div class="left-div">
-            <h2 style="margin-left: 40px; margin-top: 0;">Growth with Dedication</h2>
-            <p style="margin-left: 40px;">As Millenium Fibers continues as a strong leader in the
-                recycling market, we strive to transcend our growth margin and corporate image, as well
-                as consumer expectations. We proudly declare our membership in the institute of
-                Scrap Recycling Industries (ISRI) and Paper Scrap Chapter (PSI), our initial approach
-                to access a larger consumer directory as we continue to amass our reputation.</p>
         </div>
         </div>
 
