@@ -79,7 +79,8 @@ a:focus {
 }
 
 .nav-header {
-
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .nav-logo-div{
@@ -92,6 +93,7 @@ a:focus {
     width: 175px;
     padding: 10px 0;
     vertical-align: middle;
+    margin-left: 53px;
 }
 
 .navbar-nav li {
@@ -744,6 +746,78 @@ span {
     opacity: 1;
 }
 
-/*@media all and (max-width: 407px) {*/
-    /**/
-/*}*/
+label {
+    margin: 0 30px 0 0;
+    font-size: 30px;
+    display: none;
+    width: 30px;
+    float: right;
+    color: #FFF;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1036px){
+    label {
+        display: block;
+        cursor: pointer;
+        margin-top: 30px;
+        padding: 0 0 5px 12px;
+        border: 1px solid #3a3a3a;
+        border-radius: 10px;
+        color: #3a3a3a;
+
+    }
+
+    label:active {
+        background: #3a3a3a;
+        color: #fff;
+
+    }
+
+    .nav-logo-div{
+        margin-right: 0px;
+    }
+
+    .navbar-nav li a:hover {
+        color: #d9d9d9;
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+        max-height: 0px;
+        display: none;
+        clear: both;
+        float: none;
+    }
+
+    .navbar-nav li{
+        float: none;
+        padding: 0;
+        display: block;
+        margin: 15px 0;
+    }
+
+    .navbar-nav li a {
+        display: block;
+        padding-right: 50px;
+        padding-top: 5px;
+    }
+
+    .navbar-nav li a:hover:before {
+        visibility: hidden;
+    }
+
+    #toggle:checked + .navbar-nav {
+        display: block;
+        transition-property: all;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+        min-height: 160px;
+    }
+
+}
