@@ -9,6 +9,7 @@
 html, body {
     height: 100%;
     background-color: #fff !important;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -192,10 +193,11 @@ a:focus {
 }
 
 .below-main{
-    margin: 100px auto 40px auto;
+    margin: 0 auto 40px auto;
     background-color: #fff;
     max-width: 1170px;
     padding: 0 15px;
+    display: inline-block;
 }
 
 .below-main h1 {
@@ -214,14 +216,15 @@ a:focus {
     background: #fff;
     display: inline-block;
     vertical-align: top;
-    width: 50%;
     text-align: left;
+    max-width: 590px;
 }
 
 .left-div h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #339933;
     font-size: 38px;
+    margin-left: 40px;
 }
 
 .left-div ul {
@@ -240,13 +243,22 @@ a:focus {
     font-size: 24px;
     margin-right: 20px;
     line-height: 30px;
+    border-right: 2px #d9d9d9 solid;
 }
 
 .right-div{
     background: #fff;
     display: inline-block;
     vertical-align: middle;
-    width: 50%;
+}
+
+#recycleLogo{
+    max-height: 400px;
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 32px;
 }
 
 .right-div img{
@@ -818,6 +830,137 @@ label {
         transition-duration: .2s;
         transition-timing-function: ease-in-out;
         min-height: 160px;
+        padding-left: 30px;
     }
 
+}
+
+@media only screen and (max-width: 321px){
+    .nav-logo-div a img{
+        height: 55px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    .nav-logo-div{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .below-main{
+        margin-top: 0;
+    }
+
+    .left-div h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin-left: 10px;
+    }
+
+    #recycleLogo{
+        margin: 27px 0 0 0;
+    }
+
+}
+
+@media only screen and(min-width: 347px){
+    .footer-div{
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and(min-width: 359px){
+    .footer-div{
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 361px){
+    .nav-logo-div a img{
+        height: 55px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    .nav-logo-div{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .below-main{
+        margin-top: 0;
+    }
+
+    .left-div h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin-left: 10px;
+    }
+
+    #recycleLogo{
+        margin: 27px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .nav-logo-div a img{
+        height: 55px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    .nav-logo-div{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .below-main{
+        margin-top: 0;
+    }
+
+    .left-div h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin-left: 10px;
+    }
+
+    #recycleLogo{
+        margin: 27px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .nav-logo-div a img{
+        height: 55px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    .nav-logo-div{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+
+    .below-main{
+        margin-top: 0;
+    }
+
+    .left-div h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin-left: 10px;
+    }
+
+    #recycleLogo{
+        margin: 27px 0 0 0;
+    }
 }
