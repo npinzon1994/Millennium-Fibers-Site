@@ -238,7 +238,7 @@ a:focus {
     font-size: 22px;
 }
 
-.left-div p{
+.about-text{
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     margin-right: 20px;
@@ -861,6 +861,20 @@ label {
 
     #recycleLogo{
         margin: 27px 0 0 0;
+    }
+
+    .pos-left{
+        left: 28%;
+    }
+
+    .third-div{
+        margin-top: 0;
+    }
+
+    .about-text{
+        font-size: 18px;
+        border-right: none;
+        margin-left: 40px;
     }
 
 }
