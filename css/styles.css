@@ -166,7 +166,6 @@ a:focus {
 
 #main {
     margin: 120px auto 0 auto;
-    text-align: center;
     width: 100%;
     background-color: #fff;
     text-justify: inter-word;
@@ -193,11 +192,12 @@ a:focus {
 }
 
 .below-main{
-    margin: 0 auto 40px auto;
+    margin: 40px auto 0 auto;
     background-color: #fff;
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 0 58px;
     display: inline-block;
+    text-align: center;
 }
 
 .below-main h1 {
@@ -210,6 +210,8 @@ a:focus {
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
     line-height: 54px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
 .left-div{
@@ -218,13 +220,13 @@ a:focus {
     vertical-align: top;
     text-align: left;
     max-width: 590px;
+    padding-left: 53px;
 }
 
 .left-div h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #339933;
     font-size: 38px;
-    margin-left: 40px;
 }
 
 .left-div ul {
@@ -243,13 +245,26 @@ a:focus {
     font-size: 24px;
     margin-right: 20px;
     line-height: 30px;
-    border-right: 2px #d9d9d9 solid;
 }
 
 .right-div{
     background: #fff;
     display: inline-block;
     vertical-align: middle;
+    max-width: 432px;
+    padding-right: 53px;
+}
+
+#right-id{
+    padding-left: 53px;
+    padding-right: 0;
+    margin-top: 43px;
+}
+
+#right-id-2{
+    padding-left: 53px;
+    padding-right: 0;
+    margin-top: 43px;
 }
 
 #recycleLogo{
@@ -263,11 +278,11 @@ a:focus {
 
 .right-div img{
     width: 100%;
-    max-height: 500px;
+    max-height: 288px;
 }
 
 .third-div{
-    margin: 100px auto 0 auto;
+    margin: 80px auto 0 auto;
     max-width: 1170px;
 }
 
@@ -282,7 +297,7 @@ a:focus {
 }
 
 .sixth-div{
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     max-width: 1170px;
 }
 
@@ -290,6 +305,7 @@ a:focus {
     width: 100%;
     margin: 100px auto;
     background: #3A3A3A;
+    text-align: center;
 }
 
 .bar-div ul li{
@@ -297,7 +313,7 @@ a:focus {
     display: inline-block;
     font-size: 32px;
     color: #e8e8e8;
-    margin: 40px 15px 0 15px;
+    margin: 40px 45px 0 15px;
     font-weight: bold;
     list-style-type: inherit;
 }
@@ -313,6 +329,7 @@ a:focus {
     margin: 100px auto 0 auto;
     max-width: 1370px;
     vertical-align: top;
+    text-align: center;
 }
 
 .column-div h1{
@@ -326,14 +343,21 @@ a:focus {
     margin: 0 3.1% 1em;
     padding: 0;
     height: 100%;
-    width: 27%;
+    width: 301px;
     vertical-align: top;
+}
+
+#column-id{
+    min-width: 290px;
+    background: #3a3a3a;
+    margin: auto 80px auto auto;
 }
 
 .column p{
     font-family: 'Questrial', sans-serif;
     color: #3A3A3A;
     font-size: 22px;
+    text-align: center;
 }
 
 .column h3{
@@ -395,7 +419,7 @@ a .circle:visited{
     position: relative;
     text-align: center;
     min-height: 800px;
-    background-image: url('../images/about-splash-image.jpg');
+    background-image: url('../images/splash-image.jpg');
     background-size: cover;
 }
 
@@ -445,6 +469,12 @@ a .circle:visited{
     color: #fff;
     font-family: 'Tinos', serif;
     font-size: 48px;
+}
+
+.centered h2{
+    color: #fff;
+    font-family: 'Tinos', serif;
+    font-size: 36px;
 }
 
 .pos-left {
@@ -771,6 +801,77 @@ label {
     display: none;
 }
 
+@media only screen and (max-width: 1190px){
+    .left-div h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin-left: 0;
+    }
+
+    .left-div ul li{
+        list-style-type: none;
+    }
+}
+
+@media only screen and (max-width: 1243px){
+    .left-div h2{
+        text-align: center;
+    }
+
+    .left-div ul{
+        margin: 0 auto;
+    }
+    
+    .left-div ul li{
+        text-align: left;
+    }
+
+    .left-div{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 53px;
+    }
+}
+
+@media only screen and (max-width: 1127px){
+    .left-div{
+        max-width: 100%;
+        padding-right: 53px;
+    }
+    .right-div {
+        margin-top: 40px;
+        max-width: 100%;
+        padding-left: 53px;
+    }
+
+    #right-id{
+        padding-right: 53px;
+    }
+
+    #right-id-2{
+        padding-right: 53px;
+    }
+
+    .right-div img{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1109px){
+    .column{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #column-id{
+        margin: 0;
+    }
+}
+
 @media only screen and (max-width: 1036px){
     label {
         display: block;
@@ -848,6 +949,8 @@ label {
 
     .below-main{
         margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .left-div h2{
@@ -864,7 +967,7 @@ label {
     }
 
     .pos-left{
-        left: 28%;
+        left: 33.5%;
     }
 
     .third-div{
@@ -874,7 +977,15 @@ label {
     .about-text{
         font-size: 18px;
         border-right: none;
-        margin-left: 40px;
+        /*margin-left: 40px;*/
+    }
+
+    .footer-div{
+        padding-bottom: 30px;
+    }
+
+    .pos-left h1{
+        font-size: 38px;
     }
 
 }
@@ -905,6 +1016,8 @@ label {
 
     .below-main{
         margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .left-div h2{
@@ -934,6 +1047,8 @@ label {
 
     .below-main{
         margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .left-div h2{
@@ -963,10 +1078,41 @@ label {
 
     .below-main{
         margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .below-main h1{
+        font-size: 32px;
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+
+    .below-main p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
     }
 
     .left-div h2{
         margin-left: 0;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .about-text{
+        text-align: center;
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .contact-us-btn{
+        margin-left: 0;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .left-div{
         text-align: center;
     }
 
@@ -974,7 +1120,58 @@ label {
         margin-left: 10px;
     }
 
+    .left-div ul li{
+        margin: 10px 45px 10px 0;
+        font-size: 18px;
+    }
+
     #recycleLogo{
         margin: 27px 0 0 0;
+    }
+
+    .third-div{
+        margin-top: 0;
+    }
+
+    .third-div h2{
+        font-size: 32px;
+    }
+
+    .third-div p{
+        font-size: 16px;
+    }
+
+    .bar-div{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .bar-div ul{
+        padding-top: 20px;
+    }
+
+    .bar-div ul li{
+        font-size: 22px;
+        margin: 10px 45px 10px 15px;
+    }
+
+    .bar-div p{
+        font-size: 22px;
+    }
+
+    .pos-left{
+        left: 32%;
+    }
+
+    .centered h1{
+         font-size: 38px;
+    }
+
+    .centered h2{
+        font-size: 28px;
+    }
+
+    .main-img-container{
+        min-height: 500px;
     }
 }
