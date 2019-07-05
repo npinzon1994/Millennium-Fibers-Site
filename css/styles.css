@@ -420,7 +420,7 @@ a .circle:visited{
     margin: 0 auto 50px auto;
     position: relative;
     text-align: center;
-    min-height: 800px;
+    min-height: 600px;
     background-image: url('../images/splash-image.jpg');
     background-size: cover;
 }
@@ -429,7 +429,7 @@ a .circle:visited{
     margin: 0 auto 50px auto;
     position: relative;
     text-align: center;
-    min-height: 600px;
+    min-height: 400px;
     background-image: url('../images/bottles-cropped.jpg');
     background-size: cover;
 }
@@ -642,7 +642,7 @@ a .circle:visited{
 }
 
 .g-recaptcha{
-    margin-left: 14px;
+    margin-left: 18px;
 }
 
 span {
@@ -821,9 +821,11 @@ label {
 }
 
 @media only screen and (max-width: 1243px){
-    .left-div h2{
+    .benefits{
         text-align: center;
     }
+
+
 
     .left-div ul{
         margin: 0 auto;
@@ -834,7 +836,7 @@ label {
         text-align: left;
     }
 
-    .left-div{
+    #home-left-div{
         text-align: center;
         padding-left: 0;
         padding-right: 53px;
@@ -844,10 +846,11 @@ label {
 @media only screen and (max-width: 1127px){
     .left-div{
         padding-right: 53px;
+        margin: 0 auto;
     }
     .right-div {
         margin-top: 40px;
-        max-width: 100%;
+        max-width: 590px;
         padding-left: 53px;
     }
 
@@ -1012,6 +1015,198 @@ label {
         font-size: 38px;
     }
 
+    #column-id{
+        padding: 0;
+    }
+
+    #column-id h2{
+        font-size: 24px;
+    }
+
+    #column-id p{
+        font-size: 16px;
+    }
+
+    #column-id a{
+        font-size: 16px;
+    }
+
+    .directions-btn{
+        margin: 8px;
+    }
+
+    #contactForm{
+        text-align: left;
+    }
+
+    #contactForm textarea{
+        margin-left: 8px;
+    }
+
+    #contactForm input[type=text]{
+        width: 93.6%;
+    }
+
+    .g-recaptcha{
+        margin-left: 8px;
+        width: 93.6%;
+    }
+
+    #openModal div h2{
+        font-size: 20px;
+    }
+
+    #openModal div p{
+        font-size: 16px;
+    }
+
+    #openModal div{
+        width: 250px;
+    }
+
+    #openModal2 div h2{
+        font-size: 20px;
+    }
+
+    #openModal2 div p{
+        font-size: 16px;
+    }
+
+    #openModal2 div{
+        width: 250px;
+    }
+
+    #openModal2{
+        overflow-y: scroll;
+    }
+
+    #openModal3 div h2{
+        font-size: 20px;
+    }
+
+    #openModal3 div p{
+        font-size: 16px;
+    }
+
+    #openModal3 div{
+        width: 250px;
+    }
+
+    #openModal4 div h2{
+        font-size: 20px;
+    }
+
+    #openModal4 div p{
+        font-size: 16px;
+    }
+
+    #openModal4 div{
+        width: 250px;
+    }
+
+    #openModal5 div h2{
+        font-size: 20px;
+    }
+
+    #openModal5 div p{
+        font-size: 16px;
+    }
+
+    #openModal5 div{
+        width: 250px;
+    }
+
+    #openModal5{
+        overflow-y: scroll;
+    }
+
+    #openModal6 div h2{
+        font-size: 20px;
+    }
+
+    #openModal6 div p{
+        font-size: 16px;
+    }
+
+    #openModal6 div{
+        width: 250px;
+    }
+
+    #openModal7 div h2{
+        font-size: 20px;
+    }
+
+    #openModal7 div p{
+        font-size: 16px;
+    }
+
+    #openModal7 div{
+        width: 250px;
+    }
+
+    #openModal8 div h2{
+        font-size: 20px;
+    }
+
+    #openModal8 div p{
+        font-size: 16px;
+    }
+
+    #openModal8 div{
+        width: 250px;
+    }
+
+    #openModal9 div h2{
+        font-size: 20px;
+    }
+
+    #openModal9 div p{
+        font-size: 16px;
+    }
+
+    #openModal9 div{
+        width: 250px;
+    }
+
+    #openModal9{
+        overflow-y: scroll;
+    }
+
+    #openModal10 div h2{
+        font-size: 20px;
+    }
+
+    #openModal10 div p{
+        font-size: 16px;
+    }
+
+    #openModal10 div{
+        width: 250px;
+    }
+
+    #openModal11 div h2{
+        font-size: 20px;
+    }
+
+    #openModal11 div p{
+        font-size: 16px;
+    }
+
+    #openModal11 div{
+        width: 250px;
+    }
+
+    #openModal12 div h2{
+        font-size: 20px;
+    }
+
+    #openModal12 div p{
+        font-size: 16px;
+    }
+
+    #openModal12 div{
+        width: 250px;
+    }
 }
 
 @media only screen and(min-width: 347px){
@@ -1049,12 +1244,211 @@ label {
         text-align: center;
     }
 
+    #home-left-div{
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
     .left-div ul{
         margin-left: 10px;
+        list-style-type: initial;
     }
 
     #recycleLogo{
         margin: 27px 0 0 0;
+    }
+
+    #column-id h2{
+        font-size: 26px;
+    }
+
+    #column-id p{
+        font-size: 18px;
+    }
+
+    #column-id a{
+        font-size: 18px;
+    }
+
+    .directions-btn{
+        margin: 8px;
+    }
+
+    #contactForm{
+        text-align: left;
+    }
+
+    #contactForm textarea{
+        margin-left: 8px;
+    }
+
+    #contactForm input[type=text]{
+        width: 93.6%;
+    }
+
+    .g-recaptcha{
+        margin-left: 8px;
+        width: 93.6%
+    }
+
+    #contactForm button{
+        width: 43%;
+    }
+
+    #openModal div h2{
+        font-size: 20px;
+    }
+
+    #openModal div p{
+        font-size: 16px;
+    }
+
+    #openModal div{
+        width: 250px;
+    }
+
+    #openModal2 div h2{
+        font-size: 20px;
+    }
+
+    #openModal2 div p{
+        font-size: 16px;
+    }
+
+    #openModal2 div{
+        width: 250px;
+    }
+
+    #openModal2{
+        overflow-y: scroll;
+    }
+
+    #openModal3 div h2{
+        font-size: 20px;
+    }
+
+    #openModal3 div p{
+        font-size: 16px;
+    }
+
+    #openModal3 div{
+        width: 250px;
+    }
+
+    #openModal4 div h2{
+        font-size: 20px;
+    }
+
+    #openModal4 div p{
+        font-size: 16px;
+    }
+
+    #openModal4 div{
+        width: 250px;
+    }
+
+    #openModal5 div h2{
+        font-size: 20px;
+    }
+
+    #openModal5 div p{
+        font-size: 16px;
+    }
+
+    #openModal5 div{
+        width: 250px;
+    }
+
+    #openModal5{
+        overflow-y: scroll;
+    }
+
+    #openModal6 div h2{
+        font-size: 20px;
+    }
+
+    #openModal6 div p{
+        font-size: 16px;
+    }
+
+    #openModal6 div{
+        width: 250px;
+    }
+
+    #openModal7 div h2{
+        font-size: 20px;
+    }
+
+    #openModal7 div p{
+        font-size: 16px;
+    }
+
+    #openModal7 div{
+        width: 250px;
+    }
+
+    #openModal8 div h2{
+        font-size: 20px;
+    }
+
+    #openModal8 div p{
+        font-size: 16px;
+    }
+
+    #openModal8 div{
+        width: 250px;
+    }
+
+    #openModal9 div h2{
+        font-size: 20px;
+    }
+
+    #openModal9 div p{
+        font-size: 16px;
+    }
+
+    #openModal9 div{
+        width: 250px;
+    }
+
+    #openModal9{
+        overflow-y: scroll;
+    }
+
+    #openModal10 div h2{
+        font-size: 20px;
+    }
+
+    #openModal10 div p{
+        font-size: 16px;
+    }
+
+    #openModal10 div{
+        width: 250px;
+    }
+
+    #openModal11 div h2{
+        font-size: 20px;
+    }
+
+    #openModal11 div p{
+        font-size: 16px;
+    }
+
+    #openModal11 div{
+        width: 250px;
+    }
+
+    #openModal12 div h2{
+        font-size: 20px;
+    }
+
+    #openModal12 div p{
+        font-size: 16px;
+    }
+
+    #openModal12 div{
+        width: 250px;
     }
 }
 
@@ -1075,6 +1469,11 @@ label {
         padding-right: 0;
     }
 
+    #home-left-div{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
     .left-div h2{
         margin-left: 0;
         text-align: center;
@@ -1086,6 +1485,183 @@ label {
 
     #recycleLogo{
         margin: 27px 0 0 0;
+    }
+
+    #contactForm{
+        text-align: left;
+    }
+
+    #contactForm textarea{
+        margin-left: 8px;
+    }
+
+    #contactForm input[type=text]{
+        width: 93.6%;
+    }
+
+    .g-recaptcha{
+        margin-left: 8px;
+        width: 93.6%
+    }
+
+    #contactForm button{
+        width: 43%;
+    }
+
+    #openModal div h2{
+        font-size: 22px;
+    }
+
+    #openModal div p{
+        font-size: 18px;
+    }
+
+    #openModal div{
+        width: 250px;
+    }
+
+    #openModal2 div h2{
+        font-size: 22px;
+    }
+
+    #openModal2 div p{
+        font-size: 18px;
+    }
+
+    #openModal2 div{
+        width: 250px;
+    }
+
+    #openModal2{
+        overflow-y: scroll;
+    }
+
+    #openModal3 div h2{
+        font-size: 22px;
+    }
+
+    #openModal3 div p{
+        font-size: 18px;
+    }
+
+    #openModal3 div{
+        width: 250px;
+    }
+
+    #openModal4 div h2{
+        font-size: 22px;
+    }
+
+    #openModal4 div p{
+        font-size: 18px;
+    }
+
+    #openModal4 div{
+        width: 250px;
+    }
+
+    #openModal5 div h2{
+        font-size: 22px;
+    }
+
+    #openModal5 div p{
+        font-size: 18px;
+    }
+
+    #openModal5 div{
+        width: 250px;
+    }
+
+    #openModal5{
+        overflow-y: scroll;
+    }
+
+    #openModal6 div h2{
+        font-size: 22px;
+    }
+
+    #openModal6 div p{
+        font-size: 18px;
+    }
+
+    #openModal6 div{
+        width: 250px;
+    }
+
+    #openModal7 div h2{
+        font-size: 22px;
+    }
+
+    #openModal7 div p{
+        font-size: 18px;
+    }
+
+    #openModal7 div{
+        width: 250px;
+    }
+
+    #openModal8 div h2{
+        font-size: 22px;
+    }
+
+    #openModal8 div p{
+        font-size: 18px;
+    }
+
+    #openModal8 div{
+        width: 250px;
+    }
+
+    #openModal9 div h2{
+        font-size: 22px;
+    }
+
+    #openModal9 div p{
+        font-size: 18px;
+    }
+
+    #openModal9 div{
+        width: 250px;
+    }
+
+    #openModal9{
+        overflow-y: scroll;
+    }
+
+    #openModal10 div h2{
+        font-size: 22px;
+    }
+
+    #openModal10 div p{
+        font-size: 18px;
+    }
+
+    #openModal10 div{
+        width: 250px;
+    }
+
+    #openModal11 div h2{
+        font-size: 22px;
+    }
+
+    #openModal11 div p{
+        font-size: 18px;
+    }
+
+    #openModal11 div{
+        width: 250px;
+    }
+
+    #openModal12 div h2{
+        font-size: 22px;
+    }
+
+    #openModal12 div p{
+        font-size: 18px;
+    }
+
+    #openModal12 div{
+        width: 250px;
     }
 }
 
@@ -1140,6 +1716,11 @@ label {
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #home-left-div{
+        padding-left: 30px;
+        padding-right: 0;
     }
 
     .left-div ul{
@@ -1199,5 +1780,182 @@ label {
 
     .main-img-container{
         min-height: 500px;
+    }
+
+    #contactForm{
+        text-align: left;
+    }
+
+    #contactForm textarea{
+        margin-left: 8px;
+    }
+
+    #contactForm input[type=text]{
+        width: 93.6%;
+    }
+
+    .g-recaptcha{
+        margin-left: 8px;
+        width: 93.6%
+    }
+
+    #contactForm button{
+        width: 43%;
+    }
+
+    #openModal div h2{
+        font-size: 22px;
+    }
+
+    #openModal div p{
+        font-size: 18px;
+    }
+
+    #openModal div{
+        width: 250px;
+    }
+
+    #openModal2 div h2{
+        font-size: 22px;
+    }
+
+    #openModal2 div p{
+        font-size: 18px;
+    }
+
+    #openModal2 div{
+        width: 250px;
+    }
+
+    #openModal2{
+        overflow-y: scroll;
+    }
+
+    #openModal3 div h2{
+        font-size: 22px;
+    }
+
+    #openModal3 div p{
+        font-size: 18px;
+    }
+
+    #openModal3 div{
+        width: 250px;
+    }
+
+    #openModal4 div h2{
+        font-size: 22px;
+    }
+
+    #openModal4 div p{
+        font-size: 18px;
+    }
+
+    #openModal4 div{
+        width: 250px;
+    }
+
+    #openModal5 div h2{
+        font-size: 22px;
+    }
+
+    #openModal5 div p{
+        font-size: 18px;
+    }
+
+    #openModal5 div{
+        width: 250px;
+    }
+
+    #openModal5{
+        overflow-y: scroll;
+    }
+
+    #openModal6 div h2{
+        font-size: 22px;
+    }
+
+    #openModal6 div p{
+        font-size: 18px;
+    }
+
+    #openModal6 div{
+        width: 250px;
+    }
+
+    #openModal7 div h2{
+        font-size: 22px;
+    }
+
+    #openModal7 div p{
+        font-size: 18px;
+    }
+
+    #openModal7 div{
+        width: 250px;
+    }
+
+    #openModal8 div h2{
+        font-size: 22px;
+    }
+
+    #openModal8 div p{
+        font-size: 18px;
+    }
+
+    #openModal8 div{
+        width: 250px;
+    }
+
+    #openModal9 div h2{
+        font-size: 22px;
+    }
+
+    #openModal9 div p{
+        font-size: 18px;
+    }
+
+    #openModal9 div{
+        width: 250px;
+    }
+
+    #openModal9{
+        overflow-y: scroll;
+    }
+
+    #openModal10 div h2{
+        font-size: 22px;
+    }
+
+    #openModal10 div p{
+        font-size: 18px;
+    }
+
+    #openModal10 div{
+        width: 250px;
+    }
+
+    #openModal11 div h2{
+        font-size: 22px;
+    }
+
+    #openModal11 div p{
+        font-size: 18px;
+    }
+
+    #openModal11 div{
+        width: 250px;
+    }
+
+    #openModal12 div h2{
+        font-size: 22px;
+    }
+
+    #openModal12 div p{
+        font-size: 18px;
+    }
+
+    #openModal12 div{
+        width: 250px;
     }
 }
