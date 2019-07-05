@@ -43,7 +43,7 @@
 <div id="page-container">
     <div id="main">
         <h1 style="font-family: 'Quicksand', sans-serif; font-size: 38px; margin-top: 140px; text-align: center;">Contact Us</h1>
-        <div class="column-div" style="background: #3a3a3a; position:relative; margin-top: 40px; max-width: 100%;">
+        <div class="column-div" id="column-div-id" style="background: #3a3a3a; position:relative; margin-top: 40px; max-width: 100%;">
             <div class="column" id="column-id">
                 <h2>New York Office</h2>
                 <hr style="width: 80%; color: #e8e8e8; margin-bottom: 30px;">
@@ -58,22 +58,24 @@
                 </div>
                 <a class="directions-btn" target="_blank" href="https://www.google.com/maps/place/60+S+Franklin+Ave,+Valley+Stream,+NY+11580/@40.6635555,-73.7044431,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26462f2a51563:0xf00cf1c3bdb39b58!8m2!3d40.6635555!4d-73.7022491">Get Directions</a>
             </div>
+
             <form action="../scripts/contactForm_handler.php" id="contactForm" method="post">
                 <!-- within your existing form add this field -->
-                <p style="color: red; padding-left: 43px; margin-right: 490px; font-family: 'Questrial', sans-serif;" >* = required field</p>
-                <span style="color: red; padding-left: 43px;">*</span><input type="text" style="margin-left: 4px;" name="name" placeholder="Name" required>
+                <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="company" placeholder="Company"> <br>
-                <span style="color: red; padding-left: 43px;">*</span> <input style="margin-left: 0;" type="text" name="email" placeholder="Email" required>
+                <input type="text" name="email" placeholder="Email" required>
                 <input type="text" name="phone" placeholder="Phone (no special characters)"> <br>
 
-                <textarea name="message" placeholder="Type your message here" style="margin-left: 53px;"></textarea> <br>
+                <textarea name="message" placeholder="Type your message here"></textarea> <br>
                 <div class="g-recaptcha" data-sitekey="6LeYDqsUAAAAAHAF92vlWWUil6fDjvC7BjEXufz8"></div>
 
-                <div style="margin-right: 275px;">
-                    <button type="submit" style="margin: 10px 10px 20px 54px;">Submit</button>
+                <div style="text-align: left; margin-left: 14px;">
+                    <button type="submit" style="margin: 10px 10px 20px 0;">Submit</button>
                     <button type="reset" style="margin: 10px 10px 20px 10px;">Reset</button>
                 </div>
             </form>
+
+
         </div>
         <div class="column-div" style="margin-bottom: 100px;">
             <h1>Meet the Team!</h1>

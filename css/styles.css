@@ -350,7 +350,9 @@ a:focus {
 #column-id{
     min-width: 290px;
     background: #3a3a3a;
-    margin: auto 80px auto auto;
+    margin: 45px;
+    border: 1px #fff solid;
+    padding: 20px;
 }
 
 .column p{
@@ -595,8 +597,12 @@ a .circle:visited{
 }
 
 #contactForm{
-    background-color: #3a3a3a;
+    /*background-color: maroon;*/
     display: inline-block;
+    text-align: center;
+    margin: 45px 0;
+    width: 100%;
+    max-width: 640px;
 }
 
 #contactForm p {
@@ -605,20 +611,12 @@ a .circle:visited{
 }
 
 #contactForm input[type=text] {
-    width: 300px;
+    width: 45%;
     padding: 12px 20px;
-    margin: 8px 0 8px 30px;
+    margin: 8px;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
-}
-
-#contactForm select {
-    width: 300px;
-    padding: 12px 20px;
-    margin: 8px 0 8px 30px;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 #contactForm button{
@@ -638,14 +636,13 @@ a .circle:visited{
     cursor: pointer;
 }
 
-.g-recaptcha{
-    margin-left: 54px;
+#contactForm span{
+    color: red;
+    /*padding-left: 43px;*/
 }
 
-textarea {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    height: 150px;
+.g-recaptcha{
+    margin-left: 14px;
 }
 
 span {
@@ -653,11 +650,14 @@ span {
 }
 
 #contactForm textarea {
-    width: 634px;
+    width: 93.6%;
     padding: 12px 20px;
-    margin: 8px 0 8px 30px;
+    margin: 8px 0;
     box-sizing: border-box;
     resize: vertical;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    height: 150px;
 }
 
 /* For Javascript */
@@ -801,6 +801,10 @@ label {
     display: none;
 }
 
+#benefits{
+    text-align: left;
+}
+
 @media only screen and (max-width: 1190px){
     .left-div h2{
         margin-left: 0;
@@ -823,6 +827,7 @@ label {
 
     .left-div ul{
         margin: 0 auto;
+        list-style-type: none;
     }
     
     .left-div ul li{
@@ -838,7 +843,6 @@ label {
 
 @media only screen and (max-width: 1127px){
     .left-div{
-        max-width: 100%;
         padding-right: 53px;
     }
     .right-div {
@@ -868,7 +872,15 @@ label {
     }
 
     #column-id{
-        margin: 0;
+        margin: 20px auto;
+    }
+
+    #column-div-id{
+        padding-top: 20px;
+    }
+
+    #contactForm{
+        width: 100%;
     }
 }
 
@@ -934,6 +946,18 @@ label {
         padding-left: 30px;
     }
 
+}
+
+@media only screen and (max-width: 736px){
+    #recycleLogo{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 651px){
+    .right-div{
+
+    }
 }
 
 @media only screen and (max-width: 321px){
@@ -1016,7 +1040,7 @@ label {
 
     .below-main{
         margin-top: 0;
-        padding-left: 0;
+        /*padding-left: 0;*/
         padding-right: 0;
     }
 
@@ -1114,6 +1138,8 @@ label {
 
     .left-div{
         text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .left-div ul{
