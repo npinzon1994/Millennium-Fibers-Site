@@ -196,7 +196,6 @@ a:focus {
     background-color: #fff;
     max-width: 1170px;
     padding: 0 58px;
-    display: inline-block;
     text-align: center;
 }
 
@@ -253,6 +252,14 @@ a:focus {
     vertical-align: middle;
     max-width: 432px;
     padding-right: 53px;
+}
+
+#twoPics{
+    margin-left: 15px;
+}
+
+#twoPics #bottomPic{
+    margin-top: 25px;
 }
 
 #right-id{
@@ -341,10 +348,11 @@ a:focus {
 .column{
     display: inline-block;
     margin: 0 3.1% 1em;
-    padding: 0;
+    padding: 15px;
     height: 100%;
     width: 301px;
     vertical-align: top;
+    background: #fff;
 }
 
 #column-id{
@@ -486,7 +494,20 @@ a .circle:visited{
     transform: translate(-15%, -30%);
 }
 
+.pos-left2 {
+    position: absolute;
+    top: 43%;
+    left: 21.2%;
+    transform: translate(-15%, -30%);
+}
+
 .pos-left h1{
+    color: #fff;
+    font-family: 'Tinos', serif;
+    font-size: 48px;
+}
+
+.pos-left2 h2{
     color: #fff;
     font-family: 'Tinos', serif;
     font-size: 48px;
@@ -499,6 +520,15 @@ a .circle:visited{
     margin-top: 75px;
     padding: 10px 0;
 
+}
+
+.seal{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    right: 19.1%;
+    left: 80.9%;
 }
 
 .learn-more-btn:hover{
@@ -723,6 +753,11 @@ span {
     box-shadow: 1px 1px 3px #000;
 }
 
+#aboutUsCentered{
+    line-height: 60px;
+    top: 47%;
+}
+
 .cancel {
     color: #fff;
     text-align: center;
@@ -808,7 +843,6 @@ label {
 @media only screen and (max-width: 1190px){
     .left-div h2{
         margin-left: 0;
-        text-align: center;
     }
 
     .left-div ul{
@@ -843,6 +877,16 @@ label {
     }
 }
 
+@media only screen and (max-width: 1142px){
+    #twoPics{
+        margin-left: 0;
+    }
+
+    #bottomPic{
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 1127px){
     .left-div{
         padding-right: 53px;
@@ -865,13 +909,17 @@ label {
     .right-div img{
         text-align: center;
     }
+
+    .seal{
+        right: 133px;
+    }
 }
 
 @media only screen and (max-width: 1109px){
     .column{
         display: block;
         text-align: center;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     #column-id{
@@ -884,6 +932,10 @@ label {
 
     #contactForm{
         width: 100%;
+    }
+
+    .column-div{
+        margin: 20px auto;
     }
 }
 
@@ -951,6 +1003,20 @@ label {
 
 }
 
+@media only screen and (max-width: 897px){
+    #aboutUsCentered h1{
+        font-size: 40px;
+    }
+
+    #aboutUsCentered{
+        line-height: 50px;
+    }
+
+    #aboutUsCentered h2{
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 736px){
     #recycleLogo{
         margin-left: 0;
@@ -958,8 +1024,16 @@ label {
 }
 
 @media only screen and (max-width: 651px){
-    .right-div{
+    #aboutUsCentered h1{
+        font-size: 34px;
+    }
 
+    #aboutUsCentered h2{
+        font-size: 24px;
+    }
+
+    #aboutUsCentered{
+        line-height: 45px;
     }
 }
 
